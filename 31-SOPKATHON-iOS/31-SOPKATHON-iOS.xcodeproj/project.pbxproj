@@ -10,6 +10,7 @@
 		680861FA908BD0B3D821C0B8 /* Pods_31_SOPKATHON_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA238D1EF1D71EAC0F9DA72A /* Pods_31_SOPKATHON_iOS.framework */; };
 		AB421D7F2929448800B5C952 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB421D7E2929448800B5C952 /* ListTableViewCell.swift */; };
 		AB421D822929579B00B5C952 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB421D812929579B00B5C952 /* ListHeaderView.swift */; };
+		9898317C29296AA700F24C83 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9898317B29296AA600F24C83 /* NotoSansCJKkr-Bold.otf */; };
 		EBABB09F292915FA00B553D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBABB09E292915FA00B553D5 /* Assets.xcassets */; };
 		EBABB0A2292915FA00B553D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBABB0A0292915FA00B553D5 /* LaunchScreen.storyboard */; };
 		EBABB0FF2929165400B553D5 /* Publisher+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABB0AC2929165300B553D5 /* Publisher+Driver.swift */; };
@@ -88,6 +89,7 @@
 		7093B6E93DFBF3257A2150C1 /* Pods-31-SOPKATHON-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-31-SOPKATHON-iOS.debug.xcconfig"; path = "Target Support Files/Pods-31-SOPKATHON-iOS/Pods-31-SOPKATHON-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AB421D7E2929448800B5C952 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		AB421D812929579B00B5C952 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
+		9898317B29296AA600F24C83 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
 		CA238D1EF1D71EAC0F9DA72A /* Pods_31_SOPKATHON_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_31_SOPKATHON_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBABB092292915F900B553D5 /* 31-SOPKATHON-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "31-SOPKATHON-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBABB09E292915FA00B553D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -481,6 +483,7 @@
 		EBABB13D29291A1400B553D5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9898317B29296AA600F24C83 /* NotoSansCJKkr-Bold.otf */,
 				EBABB09E292915FA00B553D5 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -621,6 +624,7 @@
 			files = (
 				EBABB0A2292915FA00B553D5 /* LaunchScreen.storyboard in Resources */,
 				EBABB09F292915FA00B553D5 /* Assets.xcassets in Resources */,
+				9898317C29296AA700F24C83 /* NotoSansCJKkr-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
