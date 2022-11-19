@@ -162,8 +162,12 @@ extension HomeVC {
         if current.counts == 0 {
             todayLabel.text = "👟 오늘은 버스 대신 산책 어때요?"
         } else {
-            todayLabel.text = "오늘은 \(current.counts)번 참았어요!"
+            todayLabel.text = "이 달은 \(current.counts)번 참았어요!"
         }
+        
+        self.view.backgroundColor = current.color
+        
+        self.monthLabel.text = "22.\(currentPage+1)"
     }
 }
 
@@ -191,7 +195,10 @@ extension HomeVC: UICollectionViewDataSource {
     }
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        let page = Int(targetContentOffset.pointee.x / self.view.frame.width)
+        var page = Int(targetContentOffset.pointee.x*2 / self.view.frame.width)
+        if page > 11 {
+            page = 11
+        }
         self.currentPage = page
     }
 }

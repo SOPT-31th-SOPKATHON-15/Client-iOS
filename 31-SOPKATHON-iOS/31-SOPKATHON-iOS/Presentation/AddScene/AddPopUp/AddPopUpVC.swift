@@ -48,6 +48,9 @@ class AddPopUpVC: UIViewController {
         
         layout()
         setprice()
+        DispatchQueue.main.asyncAfter(deadline: .now()+2.2) {
+            self.dismiss(animated: true)
+        }
         
     }
 }

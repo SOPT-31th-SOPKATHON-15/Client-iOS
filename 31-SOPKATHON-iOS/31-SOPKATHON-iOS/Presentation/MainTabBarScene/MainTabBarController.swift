@@ -30,12 +30,12 @@ extension MainTabBarController {
         listVC.view.backgroundColor = .white
         homeVC.view.backgroundColor = .white
         
-        homeVC.tabBarItem = UITabBarItem(title: "홈",
-                                          image: UIImage(systemName: "homekit"),
-                                          selectedImage: UIImage(systemName: "homekit"))
-        listVC.tabBarItem = UITabBarItem(title: "보관함",
-                                             image: UIImage(systemName: "archivebox.fill"),
-                                             selectedImage: UIImage(systemName: "archivebox.fill"))
+        homeVC.tabBarItem = UITabBarItem(title: "home",
+                                          image: UIImage(named: "icn_home"),
+                                          selectedImage: UIImage(systemName: "icn_home_fill"))
+        listVC.tabBarItem = UITabBarItem(title: "list",
+                                             image: UIImage(named: "icn_list_bottom"),
+                                             selectedImage: UIImage(named: "icn_list_bottom_fill"))
         
         setViewControllers([homeVC, listVC], animated: false)
         
