@@ -51,3 +51,7 @@ PopupVC - 김다운
 
 ## 📌 화면 전환 플로우
 ---
+
+## 📌 아요 팀원들과 찍은 사진
+![KakaoTalk_Photo_2022-11-20-02-50-25](https://user-images.githubusercontent.com/101977975/202864583-fe35317b-7368-47cb-9f6e-4fabdcfab7e8.jpeg)
+
