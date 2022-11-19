@@ -18,6 +18,30 @@ PopupVC - 김다운
 
 ## 📌 프로젝트 폴더링
 
+```bash
+├── Application
+│   ├── Appdelegate
+│   ├── SceneDelegate
+├── Core
+│   ├── Extensions
+│   ├── Utils
+│   ├── Protocols
+│   ├── Literals
+├── Resources
+│   ├── Assets
+│   ├── Fonts
+├── Data
+│   ├── Entity
+│   ├── Network
+│   ├── Model
+├── Presentation
+│   ├── Scene1
+│   ├── Scene2
+├── Supporting
+│   ├── info.plist
+├── ├── launchScreen
+```
+
 ## 📌 UI 구조 스케치
 <img width="365" alt="KakaoTalk_Photo_2022-11-20-02-41-26" src="https://user-images.githubusercontent.com/101977975/202864247-bf3662c4-2b08-4502-b07e-37dd4ce5df08.png">
 
