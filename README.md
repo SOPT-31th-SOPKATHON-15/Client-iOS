@@ -64,13 +64,15 @@ PopupVC - 김다운 <br>
 ### 2차 과제 
 
 ## 📌 서비스 설명 추가
-![16_servicebrief-2](https://user-images.githubusercontent.com/101977975/202873567-fc678edd-e440-4a0f-8ca2-2d7a95b27d68.png)
-![17_servicebrief-3](https://user-images.githubusercontent.com/101977975/202873571-2af535d7-ff2e-427a-aaed-d61e469e2254.png)
-![18_servicebrief-4](https://user-images.githubusercontent.com/101977975/202873575-88708166-a3a8-4c9f-9162-a3af57e07796.png)
+<img width="600" alt="16_servicebrief-2" src="https://user-images.githubusercontent.com/101977975/202873567-fc678edd-e440-4a0f-8ca2-2d7a95b27d68.png">
+<img width="600" alt="17_servicebrief-3" src="https://user-images.githubusercontent.com/101977975/202873571-2af535d7-ff2e-427a-aaed-d61e469e2254.png">
+<img width="600" alt="18_servicebrief-4" src="https://user-images.githubusercontent.com/101977975/202873575-88708166-a3a8-4c9f-9162-a3af57e07796.png">
 
 
 ## 📌 구현시 가장 어려웠던 부분과 해결과정
 |다운|준호|두영|민|
 |---|---|---|---|
-|아|아|textField의 글자수를 제한하고 동시에<br>라벨에 (0/30) 형태로 텍스트 변화를 주는 부분이<br>잘 구현이 되지 않았는데 delegate 관련 설정을 해주니 해결되었다.|tableView는 자주 써봤지만 section은 처음 접해봐서<br>낯설었는데 서버 오기 전에 직접<br>데이터를 만들어서 적용해보고 구현하니 잘 해결이 되었다.|
+|<img width="400" alt="KakaoTalk_Photo_2022-11-20-07-32-21" src="https://user-images.githubusercontent.com/101977975/202874108-8ae59c38-96fd-4341-89ec-56e70f9af220.png">|아|textField의 글자수를 제한하고 동시에<br>라벨에 (0/30) 형태로 텍스트 변화를 주는 부분이<br>잘 구현이 되지 않았는데 delegate 관련 설정을 해주니 해결되었다.|tableView는 자주 써봤지만 section은 처음 접해봐서<br>낯설었는데 서버 오기 전에 직접<br>데이터를 만들어서 적용해보고 구현하니 잘 해결이 되었다.|
+
+## 📌 구현 영상
 
