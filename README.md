@@ -44,13 +44,12 @@ PopupVC - 김다운 <br>
 ```
 
 ## 📌 UI 구조 스케치
----
-<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-52-18" src="https://user-images.githubusercontent.com/101977975/202864731-773dcfcd-5596-4d62-897b-bbb3f2221b95.jpeg">
-<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-46-11" src="https://user-images.githubusercontent.com/101977975/202864739-2046bc49-3e01-40ba-9a97-a3b2aa3cab14.jpeg">
-<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-46-08" src="https://user-images.githubusercontent.com/101977975/202864740-bd051b8b-3250-4279-a561-9f6900c122a6.jpeg">
-<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-46-05" src="https://user-images.githubusercontent.com/101977975/202864741-9b819299-c4b5-4d75-a391-4f657427a0b5.jpeg">
-<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-41-26" src="https://user-images.githubusercontent.com/101977975/202864744-e6dc0951-0a92-4cb8-8c4b-cec1670f79e3.png">
----
+|<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-52-18" src="https://user-images.githubusercontent.com/101977975/202864731-773dcfcd-5596-4d62-897b-bbb3f2221b95.jpeg">
+|<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-46-11" src="https://user-images.githubusercontent.com/101977975/202864739-2046bc49-3e01-40ba-9a97-a3b2aa3cab14.jpeg">
+|<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-46-08" src="https://user-images.githubusercontent.com/101977975/202864740-bd051b8b-3250-4279-a561-9f6900c122a6.jpeg">
+|<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-46-05" src="https://user-images.githubusercontent.com/101977975/202864741-9b819299-c4b5-4d75-a391-4f657427a0b5.jpeg">
+|<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-41-26" src="https://user-images.githubusercontent.com/101977975/202864744-e6dc0951-0a92-4cb8-8c4b-cec1670f79e3.png">
+|
 
 
 ## 📌 화면 전환 플로우
