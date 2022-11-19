@@ -60,7 +60,7 @@ class ListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        layout()
+        setLayout()
         config()
         register()
     }
@@ -72,7 +72,7 @@ extension ListVC {
     
     // MARK: - Layout Helper
     
-    private func layout() {
+    private func setLayout() {
         
         view.addSubviews(titleView, listTableView)
         titleView.addSubview(titleStackView)
@@ -108,6 +108,12 @@ extension ListVC {
     private func register() {
         listTableView.register(ListTableViewCell.self, forCellReuseIdentifier: ListTableViewCell.identifier)
     }
+    
+    private func presentToDetailPopUpVC() {
+        let vc = DetailPopUpVC()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -141,5 +147,9 @@ extension ListVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 35
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presentToDetailPopUpVC()
     }
 }
