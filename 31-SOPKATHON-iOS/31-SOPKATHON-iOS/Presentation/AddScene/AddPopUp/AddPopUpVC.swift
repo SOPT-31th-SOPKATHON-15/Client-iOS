@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Then
 
 class AddPopUpVC: UIViewController {
     
@@ -42,9 +43,14 @@ class AddPopUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = UIColor.gray.withAlphaComponent(0.8)
+        
+        layout()
+        setprice()
+        
     }
+}
     
 
 extension AddPopUpVC {
