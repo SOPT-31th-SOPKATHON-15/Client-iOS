@@ -42,6 +42,19 @@ class ListVC: UIViewController {
         $0.tintColor = .white
     }
     
+    private lazy var listTableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .grouped)
+        
+        tableView.backgroundColor = .clear
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = false
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        return tableView
+    }()
+    
     // MARK: - View Life Cycle
 
     override func viewDidLoad() {
@@ -49,6 +62,7 @@ class ListVC: UIViewController {
 
         layout()
         config()
+        register()
     }
 }
 
@@ -58,13 +72,9 @@ extension ListVC {
     
     // MARK: - Layout Helper
     
-    private func config() {
-        view.backgroundColor = .white
-    }
-    
     private func layout() {
         
-        view.addSubviews(titleView)
+        view.addSubviews(titleView, listTableView)
         titleView.addSubview(titleStackView)
         
         titleView.snp.makeConstraints {
@@ -80,5 +90,56 @@ extension ListVC {
             $0.height.equalTo(41)
         }
         
+        listTableView.snp.makeConstraints {
+            $0.top.equalTo(titleView.snp.bottom).offset(32)
+            $0.leading.equalTo(view.safeAreaLayoutGuide).offset(16)
+            $0.trailing.equalTo(view.safeAreaLayoutGuide).offset(-16)
+            //$0.height.equalTo(90 * 5)
+            $0.bottom.equalToSuperview()
+        }
+    }
+    
+    // MARK: - General Helper
+    
+    private func config() {
+        view.backgroundColor = .white
+    }
+    
+    private func register() {
+        listTableView.register(ListTableViewCell.self, forCellReuseIdentifier: ListTableViewCell.identifier)
+    }
+}
+
+// MARK: - UITableViewDataSource
+
+extension ListVC: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ListTableViewCell.identifier, for: indexPath) as? ListTableViewCell else {return UITableViewCell()}
+        
+        return cell
+    }
+}
+
+// MARK: - UITableViewDelegate
+
+extension ListVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return ListHeaderView()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 35
     }
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		680861FA908BD0B3D821C0B8 /* Pods_31_SOPKATHON_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA238D1EF1D71EAC0F9DA72A /* Pods_31_SOPKATHON_iOS.framework */; };
+		AB421D7F2929448800B5C952 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB421D7E2929448800B5C952 /* ListTableViewCell.swift */; };
+		AB421D822929579B00B5C952 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB421D812929579B00B5C952 /* ListHeaderView.swift */; };
 		EBABB09F292915FA00B553D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBABB09E292915FA00B553D5 /* Assets.xcassets */; };
 		EBABB0A2292915FA00B553D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBABB0A0292915FA00B553D5 /* LaunchScreen.storyboard */; };
 		EBABB0FF2929165400B553D5 /* Publisher+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABB0AC2929165300B553D5 /* Publisher+Driver.swift */; };
@@ -79,6 +81,8 @@
 
 /* Begin PBXFileReference section */
 		7093B6E93DFBF3257A2150C1 /* Pods-31-SOPKATHON-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-31-SOPKATHON-iOS.debug.xcconfig"; path = "Target Support Files/Pods-31-SOPKATHON-iOS/Pods-31-SOPKATHON-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AB421D7E2929448800B5C952 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		AB421D812929579B00B5C952 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
 		CA238D1EF1D71EAC0F9DA72A /* Pods_31_SOPKATHON_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_31_SOPKATHON_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBABB092292915F900B553D5 /* 31-SOPKATHON-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "31-SOPKATHON-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBABB09E292915FA00B553D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +183,22 @@
 				CA238D1EF1D71EAC0F9DA72A /* Pods_31_SOPKATHON_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB421D7D2929447100B5C952 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AB421D7E2929448800B5C952 /* ListTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AB421D80292956AD00B5C952 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB421D812929579B00B5C952 /* ListHeaderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EBABB089292915F900B553D5 = {
@@ -467,6 +487,8 @@
 		EBABB140292935EA00B553D5 /* ListScene */ = {
 			isa = PBXGroup;
 			children = (
+				AB421D80292956AD00B5C952 /* Views */,
+				AB421D7D2929447100B5C952 /* Cells */,
 				EBABB1492929371300B553D5 /* ListVC.swift */,
 				EBABB1432929361E00B553D5 /* DetailPopUp */,
 			);
@@ -623,6 +645,7 @@
 				EBABB1352929165400B553D5 /* NoticeAPI.swift in Sources */,
 				EBABB1072929165400B553D5 /* UISwitch+.swift in Sources */,
 				EBABB1002929165400B553D5 /* CancelBag.swift in Sources */,
+				AB421D7F2929448800B5C952 /* ListTableViewCell.swift in Sources */,
 				EBABB11B2929165400B553D5 /* setRootViewController.swift in Sources */,
 				EBABB1262929165400B553D5 /* UserDefaultKeyLIst.swift in Sources */,
 				EBABB1062929165400B553D5 /* UIDevice+.swift in Sources */,
@@ -661,6 +684,7 @@
 				EBABB1192929165400B553D5 /* applyShadow.swift in Sources */,
 				EBABB1292929165400B553D5 /* ViewModelType.swift in Sources */,
 				EBABB1102929165400B553D5 /* UIImage+.swift in Sources */,
+				AB421D822929579B00B5C952 /* ListHeaderView.swift in Sources */,
 				EBABB1122929165400B553D5 /* UIColor+.swift in Sources */,
 				EBABB13A2929165400B553D5 /* AuthService.swift in Sources */,
 				EBABB1272929165400B553D5 /* NotiList.swift in Sources */,
