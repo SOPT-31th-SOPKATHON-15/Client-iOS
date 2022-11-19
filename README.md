@@ -81,3 +81,7 @@ PopupVC - 김다운 <br>
 
 ## 📌 구현 영상
 
+
+https://user-images.githubusercontent.com/101977975/202875417-b6e41274-73d2-47e2-b445-8e48d62146f6.mp4
+
+
