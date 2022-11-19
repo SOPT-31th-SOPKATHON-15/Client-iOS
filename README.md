@@ -44,7 +44,9 @@ PopupVC - 김다운
 
 ## 📌 UI 구조 스케치
 <img width="365" alt="KakaoTalk_Photo_2022-11-20-02-41-26" src="https://user-images.githubusercontent.com/101977975/202864247-bf3662c4-2b08-4502-b07e-37dd4ce5df08.png">
-
+<img width="365" alt="KakaoTalk_Photo_2022-11-20-02-46-11" src="https://user-images.githubusercontent.com/101977975/202864415-dc39f26f-05b5-4be0-963f-8641a0195209.jpeg">
+<img width="365" alt="KakaoTalk_Photo_2022-11-20-02-46-08" src="https://user-images.githubusercontent.com/101977975/202864416-81157140-1cef-4e5a-8a7e-21100d49d88e.jpeg">
+<img width="365" alt="KakaoTalk_Photo_2022-11-20-02-46-05" src="https://user-images.githubusercontent.com/101977975/202864417-f85bea8b-c086-4af5-a335-a7f62671d8b8.jpeg">
 
 ## 📌 화면 전환 플로우
 ---
