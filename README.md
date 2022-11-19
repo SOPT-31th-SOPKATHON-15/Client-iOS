@@ -4,7 +4,7 @@ SOPT-31th-SOPKATHON-TEAM15-iOS
 ## 📌 서비스 이름과 소개
 🔔 서비스명 : 참참참 <br>
 🔔 서비스 한줄소개 : 참을 인 세번이면, 텅장을 면한다. <br>
-🔔 서비스 가치제안 : 소비습관을 개선하고 싶을 때 사용할 수 있는 서비스 순간의 소비를 참는 행위를 통해 돈을 벌었다는 생각의 변화를 주어 절약을 유도한다. <br>
+🔔 서비스 가치제안 : 소비습관을 개선하고 싶을 때 사용할 수 있는 서비스 순간의 소비를 참는 행위를 통해<br>돈을 벌었다는 생각의 변화를 주어 절약을 유도한다. <br>
 🔔 서비스 문제정의 : 소비자는 절약하는 소비습관을 들이고 싶고, 순간의 욕구를 참을 수 있는 서비스를 원한다. <br>
 🔔 서비스 타겟정의 : 소비의 욕구에서 벗어나고 싶어하지만 의지와 동기부여가 부족한, 20대 대학생 여성.**
 
@@ -44,18 +44,18 @@ PopupVC - 김다운 <br>
 ```
 
 ## 📌 UI 구조 스케치
-![KakaoTalk_Photo_2022-11-20-02-52-18](https://user-images.githubusercontent.com/101977975/202864731-773dcfcd-5596-4d62-897b-bbb3f2221b95.jpeg)
-![KakaoTalk_Photo_2022-11-20-02-46-11](https://user-images.githubusercontent.com/101977975/202864739-2046bc49-3e01-40ba-9a97-a3b2aa3cab14.jpeg)
-![KakaoTalk_Photo_2022-11-20-02-46-08](https://user-images.githubusercontent.com/101977975/202864740-bd051b8b-3250-4279-a561-9f6900c122a6.jpeg)
-![KakaoTalk_Photo_2022-11-20-02-46-05](https://user-images.githubusercontent.com/101977975/202864741-9b819299-c4b5-4d75-a391-4f657427a0b5.jpeg)
-<img width="365" alt="KakaoTalk_Photo_2022-11-20-02-41-26" src="https://user-images.githubusercontent.com/101977975/202864744-e6dc0951-0a92-4cb8-8c4b-cec1670f79e3.png">
+<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-52-18" src="https://user-images.githubusercontent.com/101977975/202864731-773dcfcd-5596-4d62-897b-bbb3f2221b95.jpeg">
+<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-46-11" src="https://user-images.githubusercontent.com/101977975/202864739-2046bc49-3e01-40ba-9a97-a3b2aa3cab14.jpeg">
+<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-46-08" src="https://user-images.githubusercontent.com/101977975/202864740-bd051b8b-3250-4279-a561-9f6900c122a6.jpeg">
+<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-46-05" src="https://user-images.githubusercontent.com/101977975/202864741-9b819299-c4b5-4d75-a391-4f657427a0b5.jpeg">
+<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-41-26" src="https://user-images.githubusercontent.com/101977975/202864744-e6dc0951-0a92-4cb8-8c4b-cec1670f79e3.png">
 
 
 ## 📌 화면 전환 플로우
 ---
-<img width="869" alt="image" src="https://user-images.githubusercontent.com/101977975/202864810-b326ae80-80ad-4243-8204-88a0ee3ac206.png">
+<img width="150" alt="image" src="https://user-images.githubusercontent.com/101977975/202864810-b326ae80-80ad-4243-8204-88a0ee3ac206.png">
 
 
 ## 📌 아요 팀원들과 찍은 사진
-![KakaoTalk_Photo_2022-11-20-02-50-25](https://user-images.githubusercontent.com/101977975/202864583-fe35317b-7368-47cb-9f6e-4fabdcfab7e8.jpeg)
+<img width="150" alt="KakaoTalk_Photo_2022-11-20-02-50-25" src="https://user-images.githubusercontent.com/101977975/202864583-fe35317b-7368-47cb-9f6e-4fabdcfab7e8.jpeg">
 
