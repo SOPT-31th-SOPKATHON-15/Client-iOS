@@ -11,7 +11,7 @@ import Foundation
 public struct Config {
     public enum Network {
         public static var baseURL: String {
-            return ""
+            return "http://3.36.161.194:3000"
         }
         
         public static var ARN: String {

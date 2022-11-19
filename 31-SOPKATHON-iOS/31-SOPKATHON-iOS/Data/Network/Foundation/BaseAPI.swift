@@ -26,7 +26,7 @@ extension BaseAPI {
         
         switch Self.apiType {
         case .alert:
-            base += "alert"
+            base += ""
         case .notice:
             base += "notice"
         case .auth:
