@@ -20,7 +20,7 @@ final class HomeImageCVC: UICollectionViewCell, UICollectionViewRegisterable {
     private let itemImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
-        iv.image = UIImage(systemName: "square.and.arrow.up.circle.fill")
+        iv.image = UIImage(named: "img_face")
         return iv
     }()
     
@@ -44,7 +44,9 @@ extension HomeImageCVC {
         addSubview(itemImageView)
         
         itemImageView.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
             make.center.equalToSuperview()
+            make.height.equalTo(itemImageView.snp.width)
         }
     }
 }
