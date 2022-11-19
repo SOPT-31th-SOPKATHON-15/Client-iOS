@@ -32,7 +32,7 @@ class ListVC: UIViewController {
     }
     
     private lazy var dateLabel = UILabel().then {
-        $0.font = .systemFont(ofSize: 16, weight: .bold)
+        $0.font = UIFont(name: "NotoSansCJKKR-Bold", size: 16)
         $0.text = "22.11"
         $0.textColor = .white
     }
