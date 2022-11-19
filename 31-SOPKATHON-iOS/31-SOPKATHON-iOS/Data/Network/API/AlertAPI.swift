@@ -12,7 +12,13 @@ import Alamofire
 import Moya
 
 public enum AlertAPI {
-    case postUserPushPartList(partList: [String])
+    case fetchProductList(year: Int, month: Int)
+    
+    case fetchHomeList
+    
+    case postProducct(productName: String, price: Int, contents: String)
+    
+    case listDetailFetch(productId: Int)
 }
 
 extension AlertAPI: BaseAPI {
@@ -22,6 +28,10 @@ extension AlertAPI: BaseAPI {
     // MARK: - Path
     public var path: String {
         switch self {
+        case .fetchHomeList: return "home"
+        case .postProducct: return "write"
+        case .listDetailFetch: return "products"
+        case .fetchProductList: return "product-list"
         default: return ""
         }
     }
@@ -29,7 +39,7 @@ extension AlertAPI: BaseAPI {
     // MARK: - Method
     public var method: Moya.Method {
         switch self {
-        case .postUserPushPartList:
+        case .postProducct:
             return .post
         default: return .get
         }
@@ -45,8 +55,15 @@ extension AlertAPI: BaseAPI {
     private var bodyParameters: Parameters? {
         var params: Parameters = [:]
         switch self {
-        case .postUserPushPartList(let partList):
-            params["parts"] = partList
+        case .listDetailFetch(let id):
+            params["productId"] = id
+        case .postProducct(let productName, let price, let content) :
+            params["productName"] = productName
+            params["price"] = price
+            params["contents"] = content
+        case .fetchProductList(let year, let month):
+            params["year"] = year
+            params["month"] = month
         default: return nil
         }
         return params
@@ -58,8 +75,10 @@ extension AlertAPI: BaseAPI {
     ///
     private var parameterEncoding: ParameterEncoding {
         switch self {
-        case .postUserPushPartList:
+        case .postProducct:
             return URLEncoding.init(destination: .httpBody, arrayEncoding: .brackets, boolEncoding: .literal)
+        case .listDetailFetch, .fetchProductList:
+            return URLEncoding.init(destination: .queryString, arrayEncoding: .noBrackets, boolEncoding: .literal)
         default:
             return JSONEncoding.default
         }
@@ -71,9 +90,9 @@ extension AlertAPI: BaseAPI {
     ///
     public var task: Task {
         switch self {
-        case .postUserPushPartList:
+        case .postProducct( _, _, _):
             var params: Parameters = [:]
-            params["user_id"] = 3
+            params["userId"] = 1
             return .requestCompositeParameters(bodyParameters: bodyParameters ?? [:], bodyEncoding: parameterEncoding, urlParameters: params)
         default:
             return .requestPlain
@@ -82,7 +101,28 @@ extension AlertAPI: BaseAPI {
     
     public var sampleData: Data {
         switch self {
-        case .postUserPushPartList:
+        case .fetchHomeList:
+            let entity = 200
+            if let data = try? JSONEncoder().encode(entity) {
+                return data
+            } else {
+                return Data()
+            }
+        case .listDetailFetch(let _):
+            let entity = 200
+            if let data = try? JSONEncoder().encode(entity) {
+                return data
+            } else {
+                return Data()
+            }
+        case .postProducct:
+            let entity = 200
+            if let data = try? JSONEncoder().encode(entity) {
+                return data
+            } else {
+                return Data()
+            }
+        case .fetchProductList(year: let year, month: let month):
             let entity = 200
             if let data = try? JSONEncoder().encode(entity) {
                 return data

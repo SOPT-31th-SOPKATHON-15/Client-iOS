@@ -47,11 +47,11 @@ class DetailPopUpVC: UIViewController {
         $0.textAlignment = .center
     }
 
-    private var closeButton: UIButton = {
+    private lazy var closeButton: UIButton = {
         let button = UIButton()
         button.setTitle("닫기", for: .normal)
         button.setTitleColor(.blue, for: .normal)
-
+        
         return button
     }()
 
@@ -63,7 +63,7 @@ class DetailPopUpVC: UIViewController {
         
         layout()
         config()
-        
+        setAddTarget()
     }
     
 }
@@ -132,9 +132,13 @@ extension DetailPopUpVC {
 //        middleView.layer.cornerRadius = 5
 //        middleView.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMinXMinYCorner)
     }
+    
+    private func setAddTarget() {
+        closeButton.addTarget(self, action: #selector(touchButton(_:)), for: .touchUpInside)
+    }
+    
+    @objc
+    func touchButton(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
 }
-
-    
- 
-    
-

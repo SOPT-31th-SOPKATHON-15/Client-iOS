@@ -108,4 +108,10 @@ extension ListTableViewCell {
         cellView.layer.borderWidth = 1
         cellView.layer.borderColor = UIColor(red: 224, green: 224, blue: 224).cgColor
     }
+    
+    func dataBind(productModel: ProductModel) {
+            productNameLabel.text = productModel.productName
+            priceLabel.text = productModel.price
+            timeLabel.text = productModel.time
+        }
 }

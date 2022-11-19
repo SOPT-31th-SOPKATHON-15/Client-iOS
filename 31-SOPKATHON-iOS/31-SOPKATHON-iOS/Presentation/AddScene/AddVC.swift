@@ -1,10 +1,3 @@
-//
-//  AddVC.swift
-//  31-SOPKATHON-iOS
-//
-//  Created by Junho Lee on 2022/11/20.
-//
-
 import UIKit
 import SnapKit
 
@@ -198,6 +191,6 @@ extension AddVC {
     @objc private func presentToAddPopUpVC(){
         let popupVC = AddPopUpVC()
         popupVC.modalPresentationStyle = .fullScreen
-        self.present(popupVC, animated: true)
+        self.present(popupVC, animated: true) 
     }
 }

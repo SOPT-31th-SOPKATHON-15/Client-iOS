@@ -7,17 +7,36 @@
 //
 
 import Foundation
-import Combine
+
 
 import Alamofire
 import Moya
 
-public typealias DefaultAlertService = BaseService<AlertAPI>
+typealias DefaultAlertService = BaseService<AlertAPI>
 
-public protocol AlertService {
-    
+
+
+protocol AlertService {
+    func fetchListDetail(productId: Int, completion: @escaping (Result<[ListDetailModel], Error>) -> Void)
+    func addProduct(productName: String, price: Int, contents: String, completion: @escaping (Result<AddProductModel?, Error>) -> Void)
+    func fetchProductList(year: Int, month: Int, completion: @escaping (Result<ProductListModel?, Error>) -> Void)
+    func fetchHomeList(completion: @escaping (Result<HomeModel?, Error>) -> Void)
 }
 
 extension DefaultAlertService: AlertService {
+    func fetchProductList(year: Int, month: Int, completion: @escaping (Result<ProductListModel?, Error>) -> Void) {
+        requestObject(.fetchProductList(year: year, month: month), completion: completion)
+    }
     
+    func addProduct(productName: String, price: Int, contents: String, completion: @escaping (Result<AddProductModel?, Error>) -> Void) {
+        requestObject(.postProducct(productName: productName, price: price, contents: contents), completion: completion)
+    }
+    
+    func fetchListDetail(productId: Int, completion: @escaping (Result<[ListDetailModel], Error>) -> Void) {
+        requestArray(.listDetailFetch(productId: productId), completion: completion)
+    }
+    
+    func fetchHomeList(completion: @escaping (Result<HomeModel?, Error>) -> Void) {
+        requestObject(.fetchHomeList, completion: completion)
+    }
 }

@@ -105,8 +105,8 @@ extension BaseService {
             case .success(let value):
                 do {
                     let decoder = JSONDecoder()
-                    let body = try decoder.decode(T.self, from: value.data)
-                    completion(.success(body))
+                    let body = try decoder.decode(GeneralResponse<T>.self, from: value.data)
+                    completion(.success(body.data))
                 } catch let error {
                     completion(.failure(error))
                 }
@@ -129,8 +129,8 @@ extension BaseService {
             case .success(let value):
                 do {
                     let decoder = JSONDecoder()
-                    let body = try decoder.decode([T].self, from: value.data)
-                    completion(.success(body))
+                    let body = try decoder.decode(GeneralResponse<[T]>.self, from: value.data)
+                    completion(.success(body.data ?? []))
                 } catch let error {
                     completion(.failure(error))
                 }

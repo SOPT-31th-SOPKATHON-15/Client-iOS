@@ -72,13 +72,14 @@ extension RDTabBarController {
     func setMiddleButton() {
 
         let middleBtn = UIButton(frame: CGRect(x: (self.view.bounds.width / 2)-28, y: -28-8, width: 56, height: 56))
-        middleBtn.backgroundColor = .black
+        middleBtn.backgroundColor = .black.withAlphaComponent(0.1)
         middleBtn.layer.cornerRadius = 28
         self.rdTabBar.addSubview(middleBtn)
         middleBtn.addTarget(self, action: #selector(self.menuButtonAction), for: .touchUpInside)
         
         let plusImage = UIImageView(frame: CGRect(x: 28-12, y: 28-12, width: 24, height: 24))
         plusImage.image = UIImage(systemName: "plus.circle.fill")
+        plusImage.contentMode = .scaleAspectFill
         middleBtn.addSubview(plusImage)
     }
 

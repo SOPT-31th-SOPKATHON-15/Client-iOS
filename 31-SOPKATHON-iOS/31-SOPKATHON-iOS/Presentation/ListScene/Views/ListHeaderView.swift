@@ -50,4 +50,8 @@ extension ListHeaderView {
         }
         
     }
+    
+    func setDate(date: String) {
+        dateLabel.text = date
+    }
 }
