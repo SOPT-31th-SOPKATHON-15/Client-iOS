@@ -54,7 +54,7 @@ PopupVC - 김다운 <br>
 
 ## 📌 화면 전환 플로우
 ---
-<img width="706" alt="202864810-b326ae80-80ad-4243-8204-88a0ee3ac206" src="https://user-images.githubusercontent.com/101977975/202872751-40a79c7f-81dd-47d2-ab9a-f979160ab1b4.png">
+<img width="900" alt="202864810-b326ae80-80ad-4243-8204-88a0ee3ac206" src="https://user-images.githubusercontent.com/101977975/202872751-40a79c7f-81dd-47d2-ab9a-f979160ab1b4.png">
 
 
 ## 📌 아요 팀원들과 찍은 사진
