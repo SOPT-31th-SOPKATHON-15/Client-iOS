@@ -156,7 +156,7 @@ extension HomeVC {
     private func setCurrentPage() {
         let current = data[currentPage]
         
-        self.priceLabel.text = "\(current.price)won"
+        self.priceLabel.text = "\(numberFormatter(number: current.price))won"
         self.statusLabel.text = "\(current.status)"
         
         if current.counts == 0 {
@@ -168,6 +168,13 @@ extension HomeVC {
         self.view.backgroundColor = current.color
         
         self.monthLabel.text = "22.\(currentPage+1)"
+    }
+    
+    private func numberFormatter(number: Int) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        
+        return numberFormatter.string(from: NSNumber(value: number))!
     }
 }
 

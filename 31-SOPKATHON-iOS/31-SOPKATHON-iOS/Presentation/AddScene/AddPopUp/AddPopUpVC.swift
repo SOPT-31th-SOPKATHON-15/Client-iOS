@@ -29,7 +29,7 @@ class AddPopUpVC: UIViewController {
     lazy var priceLabel = UILabel().then {
         $0.textColor = .black
         $0.font = .systemFont(ofSize: 32, weight: .bold)
-        $0.text = "\(price)won"
+        $0.text = "\(numberFormatter(number:price))won"
     }
     
     private let noticeLabel = UILabel().then {
@@ -38,7 +38,12 @@ class AddPopUpVC: UIViewController {
         $0.font = .systemFont(ofSize: 20, weight: .regular)
     }
     
-    
+    private func numberFormatter(number: Int) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        
+        return numberFormatter.string(from: NSNumber(value: number))!
+    }
     
     
     override func viewDidLoad() {

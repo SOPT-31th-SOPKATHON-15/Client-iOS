@@ -88,6 +88,7 @@
 		EBABB16E29298ACF00B553D5 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABB16D29298ACF00B553D5 /* ProductList.swift */; };
 		EBABB17029298B3200B553D5 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABB16F29298B3200B553D5 /* GeneralResponse.swift */; };
 		EBABB17629298D5200B553D5 /* NotoSansMonoCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBABB17529298D5200B553D5 /* NotoSansMonoCJKkr-Bold.otf */; };
+		EBABB1792929994C00B553D5 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABB1782929994C00B553D5 /* ProductModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,6 +176,7 @@
 		EBABB16D29298ACF00B553D5 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 		EBABB16F29298B3200B553D5 /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
 		EBABB17529298D5200B553D5 /* NotoSansMonoCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansMonoCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		EBABB1782929994C00B553D5 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		FB53ADE9B80FE250965C7CD6 /* Pods-31-SOPKATHON-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-31-SOPKATHON-iOS.release.xcconfig"; path = "Target Support Files/Pods-31-SOPKATHON-iOS/Pods-31-SOPKATHON-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -525,6 +527,7 @@
 		EBABB140292935EA00B553D5 /* ListScene */ = {
 			isa = PBXGroup;
 			children = (
+				EBABB1772929994400B553D5 /* Model */,
 				AB421D87292968FB00B5C952 /* VC */,
 				AB421D80292956AD00B5C952 /* Views */,
 				AB421D7D2929447100B5C952 /* Cells */,
@@ -575,6 +578,14 @@
 				EBABB15B2929463800B553D5 /* HomeImageCVC.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		EBABB1772929994400B553D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBABB1782929994C00B553D5 /* ProductModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -753,6 +764,7 @@
 				EBABB1122929165400B553D5 /* UIColor+.swift in Sources */,
 				EBABB13A2929165400B553D5 /* AuthService.swift in Sources */,
 				EBABB16C29298ABF00B553D5 /* ListDetail.swift in Sources */,
+				EBABB1792929994C00B553D5 /* ProductModel.swift in Sources */,
 				EBABB1272929165400B553D5 /* NotiList.swift in Sources */,
 				EBABB1082929165400B553D5 /* UITextView+.swift in Sources */,
 				EBABB1302929165400B553D5 /* SampleEntity.swift in Sources */,
