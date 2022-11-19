@@ -118,7 +118,7 @@ extension HomeVC {
 // MARK: - UICollectionViewDataSource
 
 extension HomeVC: UICollectionViewDelegate {
-
+    
 }
 
 
