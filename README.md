@@ -44,18 +44,33 @@ PopupVC - 김다운 <br>
 ```
 
 ## 📌 UI 구조 스케치
-![KakaoTalk_Photo_2022-11-20-02-52-18](https://user-images.githubusercontent.com/101977975/202864731-773dcfcd-5596-4d62-897b-bbb3f2221b95.jpeg)
-![KakaoTalk_Photo_2022-11-20-02-46-11](https://user-images.githubusercontent.com/101977975/202864739-2046bc49-3e01-40ba-9a97-a3b2aa3cab14.jpeg)
-![KakaoTalk_Photo_2022-11-20-02-46-08](https://user-images.githubusercontent.com/101977975/202864740-bd051b8b-3250-4279-a561-9f6900c122a6.jpeg)
-![KakaoTalk_Photo_2022-11-20-02-46-05](https://user-images.githubusercontent.com/101977975/202864741-9b819299-c4b5-4d75-a391-4f657427a0b5.jpeg)
-<img width="365" alt="KakaoTalk_Photo_2022-11-20-02-41-26" src="https://user-images.githubusercontent.com/101977975/202864744-e6dc0951-0a92-4cb8-8c4b-cec1670f79e3.png">
+|<img width="222" alt="스크린샷 2022-11-20 06 33 56" src="https://user-images.githubusercontent.com/101977975/202864731-773dcfcd-5596-4d62-897b-bbb3f2221b95.jpeg">
+|<img width="222" alt="스크린샷 2022-11-20 06 33 56" src="https://user-images.githubusercontent.com/101977975/202864739-2046bc49-3e01-40ba-9a97-a3b2aa3cab14.jpeg">
+|<img width="222" alt="스크린샷 2022-11-20 06 33 56" src="https://user-images.githubusercontent.com/101977975/202864740-bd051b8b-3250-4279-a561-9f6900c122a6.jpeg">
+|<img width="222" alt="스크린샷 2022-11-20 06 33 56" src="https://user-images.githubusercontent.com/101977975/202864741-9b819299-c4b5-4d75-a391-4f657427a0b5.jpeg">
+|<img width="222" alt="스크린샷 2022-11-20 06 33 56" src="https://user-images.githubusercontent.com/101977975/202872635-2cedfc2d-dfa9-4204-a2e7-432cf0ea6bb2.png">
+|
 
 
 ## 📌 화면 전환 플로우
 ---
-<img width="869" alt="image" src="https://user-images.githubusercontent.com/101977975/202864810-b326ae80-80ad-4243-8204-88a0ee3ac206.png">
+<img width="900" alt="202864810-b326ae80-80ad-4243-8204-88a0ee3ac206" src="https://user-images.githubusercontent.com/101977975/202872751-40a79c7f-81dd-47d2-ab9a-f979160ab1b4.png">
 
 
 ## 📌 아요 팀원들과 찍은 사진
-![KakaoTalk_Photo_2022-11-20-02-50-25](https://user-images.githubusercontent.com/101977975/202864583-fe35317b-7368-47cb-9f6e-4fabdcfab7e8.jpeg)
+<img width="400" alt="image2" src="https://user-images.githubusercontent.com/101977975/202864583-fe35317b-7368-47cb-9f6e-4fabdcfab7e8.jpeg">
+
+---
+### 2차 과제 
+
+## 📌 서비스 설명 추가
+![16_servicebrief-2](https://user-images.githubusercontent.com/101977975/202873567-fc678edd-e440-4a0f-8ca2-2d7a95b27d68.png)
+![17_servicebrief-3](https://user-images.githubusercontent.com/101977975/202873571-2af535d7-ff2e-427a-aaed-d61e469e2254.png)
+![18_servicebrief-4](https://user-images.githubusercontent.com/101977975/202873575-88708166-a3a8-4c9f-9162-a3af57e07796.png)
+
+
+## 📌 구현시 가장 어려웠던 부분과 해결과정
+|다운|준호|두영|민|
+|""|""![18_servicebrief-4](https://user-images.githubusercontent.com/101977975/202873573-34f70cda-953d-4ae5-9c3d-beb7187d6a71.png)
+|textField의 글자수를 제한하고 동시에<br>라벨에 (0/30) 형태로 텍스트 변화를 주는 부분이<br>잘 구현이 되지 않았는데 delegate 관련 설정을 해주니 해결되었다.|tableView는 자주 써봤지만 section은 처음 접해봐서<br>낯설었는데 서버 오기 전에 직접<br>데이터를 만들어서 적용해보고 구현하니 잘 해결이 되었다.|
 
