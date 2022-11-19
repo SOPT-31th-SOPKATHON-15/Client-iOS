@@ -75,6 +75,9 @@
 		EBABB14C2929372A00B553D5 /* DetailPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABB14B2929372A00B553D5 /* DetailPopUpVC.swift */; };
 		EBABB14E2929373400B553D5 /* AddPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABB14D2929373400B553D5 /* AddPopUpVC.swift */; };
 		EBABB1502929374100B553D5 /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABB14F2929374100B553D5 /* AddVC.swift */; };
+		EBABB15529293AC900B553D5 /* RdTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABB15229293AC900B553D5 /* RdTabBarItem.swift */; };
+		EBABB15629293AC900B553D5 /* RDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABB15329293AC900B553D5 /* RDTabBarController.swift */; };
+		EBABB15729293AC900B553D5 /* RDTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABB15429293AC900B553D5 /* RDTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,6 +152,9 @@
 		EBABB14B2929372A00B553D5 /* DetailPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPopUpVC.swift; sourceTree = "<group>"; };
 		EBABB14D2929373400B553D5 /* AddPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPopUpVC.swift; sourceTree = "<group>"; };
 		EBABB14F2929374100B553D5 /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		EBABB15229293AC900B553D5 /* RdTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RdTabBarItem.swift; sourceTree = "<group>"; };
+		EBABB15329293AC900B553D5 /* RDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTabBarController.swift; sourceTree = "<group>"; };
+		EBABB15429293AC900B553D5 /* RDTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDTabBar.swift; sourceTree = "<group>"; };
 		FB53ADE9B80FE250965C7CD6 /* Pods-31-SOPKATHON-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-31-SOPKATHON-iOS.release.xcconfig"; path = "Target Support Files/Pods-31-SOPKATHON-iOS/Pods-31-SOPKATHON-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -451,6 +457,7 @@
 		EBABB13E292935D700B553D5 /* MainTabBarScene */ = {
 			isa = PBXGroup;
 			children = (
+				EBABB15129293AC900B553D5 /* Components */,
 				EBABB145292936EB00B553D5 /* MainTabBarController.swift */,
 			);
 			path = MainTabBarScene;
@@ -496,6 +503,16 @@
 				EBABB14B2929372A00B553D5 /* DetailPopUpVC.swift */,
 			);
 			path = DetailPopUp;
+			sourceTree = "<group>";
+		};
+		EBABB15129293AC900B553D5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EBABB15229293AC900B553D5 /* RdTabBarItem.swift */,
+				EBABB15329293AC900B553D5 /* RDTabBarController.swift */,
+				EBABB15429293AC900B553D5 /* RDTabBar.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -644,6 +661,7 @@
 				EBABB11D2929165400B553D5 /* getClassName.swift in Sources */,
 				EBABB14A2929371300B553D5 /* ListVC.swift in Sources */,
 				EBABB10F2929165400B553D5 /* UITextField+.swift in Sources */,
+				EBABB15529293AC900B553D5 /* RdTabBarItem.swift in Sources */,
 				EBABB1092929165400B553D5 /* UITabBar+.swift in Sources */,
 				EBABB1152929165400B553D5 /* RXTextViewDelegateProxy.swift in Sources */,
 				EBABB11C2929165400B553D5 /* JsonCoder.swift in Sources */,
@@ -659,6 +677,7 @@
 				EBABB1112929165400B553D5 /* UITableView+.swift in Sources */,
 				EBABB11F2929165400B553D5 /* addSubviews.swift in Sources */,
 				EBABB1192929165400B553D5 /* applyShadow.swift in Sources */,
+				EBABB15629293AC900B553D5 /* RDTabBarController.swift in Sources */,
 				EBABB1292929165400B553D5 /* ViewModelType.swift in Sources */,
 				EBABB1102929165400B553D5 /* UIImage+.swift in Sources */,
 				EBABB1122929165400B553D5 /* UIColor+.swift in Sources */,
@@ -677,6 +696,7 @@
 				EBABB1012929165400B553D5 /* String+.swift in Sources */,
 				EBABB1182929165400B553D5 /* ShowToast.swift in Sources */,
 				EBABB1372929165400B553D5 /* AlertAPI.swift in Sources */,
+				EBABB15729293AC900B553D5 /* RDTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
