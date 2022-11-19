@@ -161,7 +161,7 @@ extension RDTabBar {
     private func addShape() {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
-        shapeLayer.fillColor = UIColor(rgb: 0x000000).cgColor
+        shapeLayer.fillColor = UIColor(rgb: 0x000000).withAlphaComponent(0.1).cgColor
 
         if let oldShapeLayer = self.shapeLayer {
             self.layer.replaceSublayer(oldShapeLayer, with: shapeLayer)

@@ -20,7 +20,7 @@ final class HomeImageCVC: UICollectionViewCell, UICollectionViewRegisterable {
     private let itemImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
-        iv.image = UIImage(named: "img_face")
+        iv.image = UIImage()
         return iv
     }()
     
@@ -48,5 +48,9 @@ extension HomeImageCVC {
             make.center.equalToSuperview()
             make.height.equalTo(itemImageView.snp.width)
         }
+    }
+    
+    public func setImage(image: UIImage) {
+        itemImageView.image = image
     }
 }

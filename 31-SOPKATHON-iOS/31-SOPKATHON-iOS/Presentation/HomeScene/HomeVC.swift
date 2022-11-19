@@ -12,11 +12,11 @@ class HomeVC: UIViewController {
     
     // MARK: - Properties
     
-    var datas = [UIImage]()
+    var data = [HomeListModel]()
     
     private var currentPage: Int = 0 {
         didSet {
-            print(currentPage)
+            setCurrentPage()
         }
     }
     
@@ -25,7 +25,7 @@ class HomeVC: UIViewController {
     private let monthLabel: UILabel = {
         let label = UILabel()
         label.text = "22.11"
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont(name: "NotoSansCJKKR-Bold", size: 16)
         label.textColor = .white
         label.backgroundColor = .black
         label.layer.cornerRadius = 22.adjustedH
@@ -38,7 +38,8 @@ class HomeVC: UIViewController {
         let layout = CarouselLayout()
         layout.itemSize = CGSize(width: 300, height: 300)
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.backgroundColor = .gray.withAlphaComponent(0.1)
+        cv.backgroundColor = .clear
+        cv.showsHorizontalScrollIndicator = false
         return cv
     }()
     
@@ -77,7 +78,7 @@ class HomeVC: UIViewController {
         service.fetchHomeList { result in
             result.success { entity in
                 if let model = entity {
-                    self.datas = model.monthList.map { $0.toImage() }
+                    self.data = model.monthList.map { $0.toHomeListModel() }
                     self.carousel.reloadData()
                 }
             }
@@ -152,8 +153,17 @@ extension HomeVC {
         HomeImageCVC.register(target: carousel)
     }
     
-    private func fetchData() {
+    private func setCurrentPage() {
+        let current = data[currentPage]
         
+        self.priceLabel.text = "\(current.price)won"
+        self.statusLabel.text = "\(current.status)"
+        
+        if current.counts == 0 {
+            todayLabel.text = "👟 오늘은 버스 대신 산책 어때요?"
+        } else {
+            todayLabel.text = "오늘은 \(current.counts)번 참았어요!"
+        }
     }
 }
 
@@ -170,12 +180,12 @@ extension HomeVC: UICollectionViewDelegate {
 
 extension HomeVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        datas.count
+        data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeImageCVC.className, for: indexPath) as? HomeImageCVC else { return UICollectionViewCell() }
-//        cell.setImage(image: datas[indexPath.row])
+        cell.setImage(image: data[indexPath.row].image)
         
         return cell
     }
