@@ -26,9 +26,34 @@ class HomeVC: UIViewController {
     
     lazy var carousel: UICollectionView = {
         let layout = CarouselLayout()
+        layout.itemSize = CGSize(width: 300, height: 300)
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.backgroundColor = .clear
+        cv.backgroundColor = .gray.withAlphaComponent(0.1)
         return cv
+    }()
+    
+    private let priceLabel: UILabel = {
+        let label = UILabel()
+        label.text = "3,330won"
+        label.font = UIFont.systemFont(ofSize: 34)
+        label.textColor = .black
+        return label
+    }()
+    
+    private let statusLabel: UILabel = {
+        let label = UILabel()
+        label.text = "열심히 참는 중"
+        label.font = UIFont.systemFont(ofSize: 24)
+        label.textColor = .black
+        return label
+    }()
+    
+    private let todayLabel: UILabel = {
+        let label = UILabel()
+        label.text = "👟 오늘은 버스 대신 산책 어때요?"
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = .black
+        return label
     }()
     
     override func viewDidLoad() {
@@ -44,7 +69,8 @@ class HomeVC: UIViewController {
 
 extension HomeVC {
     private func setLayout() {
-        self.view.addSubviews(monthLabel, carousel)
+        self.view.addSubviews(monthLabel, carousel, priceLabel,
+                              statusLabel, todayLabel)
         
         monthLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(79.adjustedH)
@@ -55,8 +81,23 @@ extension HomeVC {
         
         carousel.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview()
-            make.top.equalTo(monthLabel.snp.bottom).inset(54)
+            make.top.equalTo(monthLabel.snp.bottom).offset(54)
             make.height.equalTo(300)
+        }
+        
+        priceLabel.snp.makeConstraints { make in
+            make.top.equalTo(carousel.snp.bottom).offset(28.adjustedH)
+            make.centerX.equalToSuperview()
+        }
+        
+        statusLabel.snp.makeConstraints { make in
+            make.top.equalTo(priceLabel.snp.bottom).offset(20.adjustedH)
+            make.centerX.equalToSuperview()
+        }
+        
+        todayLabel.snp.makeConstraints { make in
+            make.top.equalTo(statusLabel.snp.bottom).offset(60)
+            make.centerX.equalToSuperview()
         }
     }
 }
@@ -77,7 +118,7 @@ extension HomeVC {
 // MARK: - UICollectionViewDataSource
 
 extension HomeVC: UICollectionViewDelegate {
-    
+
 }
 
 
