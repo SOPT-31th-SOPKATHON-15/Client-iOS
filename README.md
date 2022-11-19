@@ -48,6 +48,7 @@ PopupVC - 김다운 <br>
 ![KakaoTalk_Photo_2022-11-20-02-46-11](https://user-images.githubusercontent.com/101977975/202864739-2046bc49-3e01-40ba-9a97-a3b2aa3cab14.jpeg)
 ![KakaoTalk_Photo_2022-11-20-02-46-08](https://user-images.githubusercontent.com/101977975/202864740-bd051b8b-3250-4279-a561-9f6900c122a6.jpeg)
 ![KakaoTalk_Photo_2022-11-20-02-46-05](https://user-images.githubusercontent.com/101977975/202864741-9b819299-c4b5-4d75-a391-4f657427a0b5.jpeg)
+<img width="222" alt="스크린샷 2022-11-20 06 33 56" src="https://user-images.githubusercontent.com/101977975/202872635-2cedfc2d-dfa9-4204-a2e7-432cf0ea6bb2.png">
 
 
 
@@ -57,5 +58,5 @@ PopupVC - 김다운 <br>
 
 
 ## 📌 아요 팀원들과 찍은 사진
-<img width="400" src="https://user-images.githubusercontent.com/101977975/202864583-fe35317b-7368-47cb-9f6e-4fabdcfab7e8.jpeg'?
+<img width="400" alt="image2" src="https://user-images.githubusercontent.com/101977975/202864583-fe35317b-7368-47cb-9f6e-4fabdcfab7e8.jpeg">
 
