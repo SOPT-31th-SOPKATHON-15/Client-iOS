@@ -33,12 +33,12 @@ class ListTableViewCell: UITableViewCell {
     
     private let priceLabel = UILabel().then {
         $0.text = "2000"
-        $0.font = .systemFont(ofSize: 20, weight: .bold)
+        $0.font = UIFont(name: "NotoSansCJKKR-Bold", size: 20)
     }
     
     private let wonLabel = UILabel().then {
         $0.text = "원"
-        $0.font = .systemFont(ofSize: 20, weight: .bold)
+        $0.font = UIFont(name: "NotoSansCJKKR-Bold", size: 20)
     }
     
     // MARK: - View Life Cycle
