@@ -44,17 +44,17 @@ PopupVC - 김다운 <br>
 ```
 
 ## 📌 UI 구조 스케치
-![KakaoTalk_Photo_2022-11-20-02-52-18](https://user-images.githubusercontent.com/101977975/202864731-773dcfcd-5596-4d62-897b-bbb3f2221b95.jpeg)
-![KakaoTalk_Photo_2022-11-20-02-46-11](https://user-images.githubusercontent.com/101977975/202864739-2046bc49-3e01-40ba-9a97-a3b2aa3cab14.jpeg)
-![KakaoTalk_Photo_2022-11-20-02-46-08](https://user-images.githubusercontent.com/101977975/202864740-bd051b8b-3250-4279-a561-9f6900c122a6.jpeg)
-![KakaoTalk_Photo_2022-11-20-02-46-05](https://user-images.githubusercontent.com/101977975/202864741-9b819299-c4b5-4d75-a391-4f657427a0b5.jpeg)
-<img width="222" alt="스크린샷 2022-11-20 06 33 56" src="https://user-images.githubusercontent.com/101977975/202872635-2cedfc2d-dfa9-4204-a2e7-432cf0ea6bb2.png">
-
+|<img width="222" alt="스크린샷 2022-11-20 06 33 56" src="https://user-images.githubusercontent.com/101977975/202864731-773dcfcd-5596-4d62-897b-bbb3f2221b95.jpeg">
+|<img width="222" alt="스크린샷 2022-11-20 06 33 56" src="https://user-images.githubusercontent.com/101977975/202864739-2046bc49-3e01-40ba-9a97-a3b2aa3cab14.jpeg">
+|<img width="222" alt="스크린샷 2022-11-20 06 33 56" src="https://user-images.githubusercontent.com/101977975/202864740-bd051b8b-3250-4279-a561-9f6900c122a6.jpeg">
+|<img width="222" alt="스크린샷 2022-11-20 06 33 56" src="https://user-images.githubusercontent.com/101977975/202864741-9b819299-c4b5-4d75-a391-4f657427a0b5.jpeg">
+|<img width="222" alt="스크린샷 2022-11-20 06 33 56" src="https://user-images.githubusercontent.com/101977975/202872635-2cedfc2d-dfa9-4204-a2e7-432cf0ea6bb2.png">
+|
 
 
 ## 📌 화면 전환 플로우
 ---
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/101977975/202864810-b326ae80-80ad-4243-8204-88a0ee3ac206.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/101977975/202864810-b326ae80-80ad-4243-8204-88a0ee3ac206.png">
 
 
 ## 📌 아요 팀원들과 찍은 사진
