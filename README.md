@@ -48,14 +48,14 @@ PopupVC - 김다운 <br>
 ![KakaoTalk_Photo_2022-11-20-02-46-11](https://user-images.githubusercontent.com/101977975/202864739-2046bc49-3e01-40ba-9a97-a3b2aa3cab14.jpeg)
 ![KakaoTalk_Photo_2022-11-20-02-46-08](https://user-images.githubusercontent.com/101977975/202864740-bd051b8b-3250-4279-a561-9f6900c122a6.jpeg)
 ![KakaoTalk_Photo_2022-11-20-02-46-05](https://user-images.githubusercontent.com/101977975/202864741-9b819299-c4b5-4d75-a391-4f657427a0b5.jpeg)
-<img width="365" alt="KakaoTalk_Photo_2022-11-20-02-41-26" src="https://user-images.githubusercontent.com/101977975/202864744-e6dc0951-0a92-4cb8-8c4b-cec1670f79e3.png">
+
 
 
 ## 📌 화면 전환 플로우
 ---
-<img width="869" alt="image" src="https://user-images.githubusercontent.com/101977975/202864810-b326ae80-80ad-4243-8204-88a0ee3ac206.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/101977975/202864810-b326ae80-80ad-4243-8204-88a0ee3ac206.png">
 
 
 ## 📌 아요 팀원들과 찍은 사진
-![KakaoTalk_Photo_2022-11-20-02-50-25](https://user-images.githubusercontent.com/101977975/202864583-fe35317b-7368-47cb-9f6e-4fabdcfab7e8.jpeg)
+<img width="400" src="https://user-images.githubusercontent.com/101977975/202864583-fe35317b-7368-47cb-9f6e-4fabdcfab7e8.jpeg'?
 
