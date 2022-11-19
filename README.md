@@ -9,10 +9,10 @@ SOPT-31th-SOPKATHON-TEAM15-iOS
 🔔 서비스 타겟정의 : 소비의 욕구에서 벗어나고 싶어하지만 의지와 동기부여가 부족한, 20대 대학생 여성.**
 
 ## 📌 역할 분배
-HomeVC - 이준호
-AddVC - 고두영
-ListVC - 김민
-PopupVC - 김다운
+HomeVC - 이준호 <br>
+AddVC - 고두영 <br>
+ListVC - 김민 <br>
+PopupVC - 김다운 <br>
 
 ## 📌 코드 컨벤션
 [코드 컨벤션 바로가기](https://jade-savory-505.notion.site/Code-Convention-47754cc9d9e4454999ec6942edb33975)
