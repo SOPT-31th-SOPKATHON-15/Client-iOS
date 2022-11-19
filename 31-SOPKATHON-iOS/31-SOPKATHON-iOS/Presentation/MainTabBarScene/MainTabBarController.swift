@@ -28,7 +28,7 @@ extension MainTabBarController {
         let homeVC = HomeVC()
         let listVC = ListVC()
         listVC.view.backgroundColor = .cyan
-        homeVC.view.backgroundColor = .systemPink
+        homeVC.view.backgroundColor = .white
         
         homeVC.tabBarItem = UITabBarItem(title: "홈",
                                           image: UIImage(systemName: "homekit"),
