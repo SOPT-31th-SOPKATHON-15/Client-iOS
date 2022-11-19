@@ -9,7 +9,7 @@ import UIKit
 import Then
 
 class AddPopUpVC: UIViewController {
-
+    
     private let firstView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -17,7 +17,7 @@ class AddPopUpVC: UIViewController {
         return view
     }()
     
-    var price = 25000
+    var price = 750000
     
     private let imageView: UIImageView = {
         let view = UIImageView()
@@ -43,7 +43,7 @@ class AddPopUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.backgroundColor = UIColor.gray.withAlphaComponent(0.8)
         
         layout()
@@ -79,14 +79,14 @@ extension AddPopUpVC {
         
         
         priceLabel.snp.makeConstraints { make in
-            make.bottom.equalTo(self.view.snp.bottom).offset(-295)
+            make.bottom.equalTo(self.firstView.snp.bottom).offset(-130)
             make.centerX.equalToSuperview()
             
             
         }
         
         noticeLabel.snp.makeConstraints { make in
-            make.bottom.equalTo(self.firstView.snp.bottom).offset(-55)
+            make.bottom.equalTo(self.firstView.snp.bottom).offset(-85)
             make.centerX.equalToSuperview()
             
         }
@@ -101,27 +101,27 @@ extension AddPopUpVC {
         }
         
         else if price < 50000 {
-            noticeLabel.text = "피자 한 판 만큼 모았어요!"
+            noticeLabel.text = "피자 한 판을 참았어요!"
             
-    }
-    
+        }
+        
         else if price < 150000 {
-            noticeLabel.text = "샤넬 립스틱 만큼 모았어요!"
+            noticeLabel.text = "샤넬 립스틱을 참았어요!"
             
         }
         
         else if price < 300000 {
-            noticeLabel.text = "에어팟 만큼 모았어요!"
+            noticeLabel.text = "에어팟 프로를 참았어요!"
             
         }
         
         else if price < 500000 {
-            noticeLabel.text = "티파니 목걸이 만큼 모았어요!"
+            noticeLabel.text = "티파니 반지를 참았어요!"
             
         }
         
         else {
-            noticeLabel.text = "소니 헤드셋 만큼 모았어요!"
+            noticeLabel.text = "소니 헤드셋을 참았어요!"
             
             
         }
